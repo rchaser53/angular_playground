@@ -1,23 +1,14 @@
 {
-  "name": "angular_playground",
+  "name": "react_playground",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "predev": "tsc -p .",
+    "dev": "next -p 8080 --entry pages/js",
     "build": "next build",
     "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rchaser53/angular_playground.git"
-  },
-  "keywords": [],
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/rchaser53/angular_playground/issues"
-  },
-  "homepage": "https://github.com/rchaser53/angular_playground#readme",
   "dependencies": {
     "next": "^4.1.4",
     "react": "^16.0.0",
@@ -27,5 +18,16 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "typescript": "^2.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchaser53/react_playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rchaser53/react_playground/issues"
+  },
+  "homepage": "https://github.com/rchaser53/react_playground#readme"
 }
