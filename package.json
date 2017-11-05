@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predev": "tsc -p .",
+    "tsc": "tsc -p .",
+    "watch": "node tasks/watch.js",
+    "predev": "npm run tsc",
     "dev": "next -p 8080 --entry pages/js",
     "build": "next build",
     "start": "next start"
@@ -17,6 +19,8 @@
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "chokidar": "^1.7.0",
+    "shelljs": "^0.7.8",
     "typescript": "^2.6.1"
   },
   "repository": {
